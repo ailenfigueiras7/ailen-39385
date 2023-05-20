@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: poppinsregular;
+    src: url(../assets/font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppinsbold;
+    src: url(../assets/font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppinslight;
+    src: url(../assets/font/Poppins-Light.ttf);
+}
+
+@font-face{
+    font-family: poppinsthing;
+    src: url(../assets/font/Poppins-Thin.ttf);
+}
+
+/* Todo el documento */
+body {
+    font-family: poppinsregular, sans-serif;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+
+    /* Barra de Navegación */
+    header {
+        position: sticky;
+        top: 0;
+
+        .barra {
+            background-color: #151515;
+            padding: 30px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a:hover {
+                color: #62D9B7;
+            }
+
+            a {
+                color: #F2F2F2;
+                text-decoration: none;
+                text-decoration-color: #62D9B7;
+                font-size: 25px;
+                margin-left: 50px;
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    a {
+                        margin-left: 20px;
+                        text-decoration: none;
+                        color: #F2F2F2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    height: 650px;
+    background: url('../assets/img/fondo-index.png');
+    background-repeat: no-repeat;
+    color: #F2F2F2;
+    font-size: 30px;
+    font-family: poppinslight;
+    margin-top: -10px;
+
+    h2 {
+        color: #7C7C7C;
+        font-family: poppinsbold, sans-serif;
+        font-size: 75px;
+        margin: -150px 0px 10px 200px;
+    }
+
+    h3{
+        margin: 0px 0px 0px 200px;
+        font-size: 50px;
+    }
+
+    h3 span {
+        font-family: poppinsbold, sans-serif;
+        font-weight: bold;
+    }
+
+    h4 {
+        margin-bottom: 10px;
+        margin: 0px 0px 0px 200px;
+    }
+
+    h5 {
+        margin-top: 20px;
+    }
+
+    h5 a {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0px 0px 0px 200px;
+        background-color: #151515;
+        color: #62D9B7;
+        text-decoration: none;
+        border: 2px solid #62D9B7;
+        font-family: poppinsthing;
+    }
+
+    >div:last-child {
+        flex: 1;
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 0px 0px 0px 200px;
+        }
+    }
+}
+
+
+/* Sobre mí */
+@media (max-width:700px) {
+    .quien-soy {
+        font-size: 15px;
+    }
+
+    .presentacion {
+        font-size: 15px;
+    }
+}
+
+/* Formación */
+.formacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+/* Formulario página principal */
+.formulario {
+    width: 300px;
+    height: 100px;
+    padding: 10px 25px 10px 25px;
+    background-color: #7C7C7C;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 60px;
+    background-color: #151515;
+    gap: 15px;
+}
