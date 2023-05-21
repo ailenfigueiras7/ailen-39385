@@ -26,36 +26,40 @@ body {
   background-color: #F2F2F2;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 20px;
-  /* Barra de Navegación */ }
-  body header {
-    position: sticky;
-    top: 0; }
-    body header .barra {
-      background-color: #151515;
-      padding: 30px;
-      margin-top: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      body header .barra a:hover {
-        color: #62D9B7; }
-      body header .barra a {
-        color: #F2F2F2;
-        text-decoration: none;
-        text-decoration-color: #62D9B7;
-        font-size: 25px;
-        margin-left: 50px; }
-      body header .barra ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0; }
-        body header .barra ul li a {
-          margin-left: 20px;
-          text-decoration: none;
-          color: #F2F2F2; }
+  font-size: 20px; }
 
+/* Barra de Navegación */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header .barra {
+    background-color: #151515;
+    padding: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .barra a:hover {
+      color: #62D9B7;
+      text-decoration: underline; }
+    header .barra a {
+      color: #F2F2F2;
+      text-decoration: none;
+      text-decoration-color: #62D9B7;
+      font-size: 25px;
+      margin-left: 50px; }
+    header .barra ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      header .barra ul li a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #F2F2F2; }
+
+/* Inicio - Index */
 .inicio {
   display: flex;
   align-items: center;
@@ -72,24 +76,26 @@ body {
     font-size: 75px;
     margin: -150px 0px 10px 200px; }
   .inicio h3 {
-    margin: 0px 0px 0px 200px;
+    margin-left: 200px;
     font-size: 50px; }
   .inicio h3 span {
     font-family: poppinsbold, sans-serif;
     font-weight: bold; }
   .inicio h4 {
     margin-bottom: 10px;
-    margin: 0px 0px 0px 200px; }
+    margin-left: 200px; }
   .inicio h5 {
     margin-top: 20px; }
   .inicio h5 a {
     display: inline-block;
     padding: 5px 10px;
-    margin: 0px 0px 0px 200px;
+    margin-left: 200px;
     background-color: #151515;
-    color: #62D9B7;
+    font-size: 20px;
+    color: #F2F2F2;
     text-decoration: none;
-    border: 2px solid #62D9B7;
+    padding: 10px 20px;
+    border: 1px solid #62D9B7;
     font-family: poppinsthing; }
   .inicio > div:last-child {
     flex: 1; }
@@ -97,9 +103,123 @@ body {
       width: 100%;
       max-width: 400px;
       height: auto;
-      margin: 0px 0px 0px 200px; }
+      margin-left: 200px; }
 
-/* Sobre mí */
+/* Sobre mí - Index */
+.sobre-mi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px; }
+  .sobre-mi .imagen-presentacion {
+    position: relative;
+    background-image: url(../assets/img/fondo-verde.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 60%; }
+    .sobre-mi .imagen-presentacion .imagen-ailen-index {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 45%;
+      height: auto;
+      display: block; }
+  .sobre-mi .informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15%; }
+    .sobre-mi .informacion h2 {
+      width: 21%;
+      height: auto;
+      margin-top: -10%;
+      font-size: 40px;
+      font-family: poppinsthing;
+      border-bottom: 2px solid #62D9B7; }
+    .sobre-mi .informacion h3 {
+      width: 52%;
+      height: auto;
+      margin-top: 25px;
+      font-family: poppinslight;
+      margin-bottom: 2%; }
+      .sobre-mi .informacion h3 span {
+        font-family: poppinsbold; }
+    .sobre-mi .informacion p {
+      width: 50%;
+      height: auto;
+      margin-top: 3%;
+      line-height: 1.6; }
+    .sobre-mi .informacion a {
+      text-decoration: none;
+      margin-top: 2%;
+      color: #62D9B7; }
+    .sobre-mi .informacion a:hover {
+      text-decoration: underline; }
+
+/* A que me dedico - Index */
+.me-dedico h2 {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  text-align: center;
+  display: inline-block; }
+  .me-dedico h2.subrayado {
+    border-bottom: 2px solid #62D9B7;
+    width: 20%;
+    margin-left: 40%; }
+
+.me-dedico div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2%; }
+  .me-dedico div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .me-dedico div div img {
+      width: 25%;
+      height: auto; }
+    .me-dedico div div h3 {
+      margin-top: 3%; }
+    .me-dedico div div p {
+      width: 50%;
+      height: auto;
+      text-align: center;
+      margin-top: 2%; }
+
+.me-dedico::after {
+  content: "";
+  margin: 5%;
+  display: block;
+  width: 20%;
+  height: 2px;
+  margin-left: 40%;
+  background-color: #62D9B7; }
+
+/* Diseño y creatividad - Index */
+.diseño-creatividad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: -2%;
+  font-family: poppinslight; }
+  .diseño-creatividad h2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.5; }
+    .diseño-creatividad h2 span {
+      margin: 0.5em 0; }
+    .diseño-creatividad h2 .font {
+      color: #62D9B7;
+      font-family: poppinsregular; }
+
 @media (max-width: 700px) {
   .quien-soy {
     font-size: 15px; }
