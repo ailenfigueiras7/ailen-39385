@@ -277,6 +277,7 @@ header {
     width: 100%;
     height: auto;
     margin-top: -2%;
+    margin-bottom: 3%;
     font-family: poppinslight;
 
     h2 {
@@ -290,20 +291,32 @@ header {
             margin: 0.5em 0;
         }
 
-        .font{
+        .font {
             color: #62D9B7;
             font-family: poppinsregular;
         }
     }
 }
 
-@media (max-width:700px) {
-    .quien-soy {
-        font-size: 15px;
-    }
+/* Formulario Index */
+.form {
+    width: 50%;
+    height: auto;
+    background-color: #7C7C7C;
+    margin-left: 25%;
+    margin-bottom: 3%;
+    padding: 2%;
+    color: #F2F2F2;
+    text-align: center;
+    border-radius: 20px;
 
-    .presentacion {
-        font-size: 15px;
+    div {
+        margin-bottom: 2%;
+
+        p {
+            font-size: 25px;
+            font-family: poppinslight;
+        }
     }
 }
 
@@ -321,6 +334,117 @@ header {
     padding: 10px 25px 10px 25px;
     background-color: #7C7C7C;
 }
+
+/* Sobre mí - html1 */
+.sobre-mi-html {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: auto;
+    background-color: #151515;
+
+    .sobre-mi-img {
+        img {
+            width: 30%;
+            height: auto;
+            margin-left: 40%
+        }
+    }
+
+    .presentacion {
+        padding: 20px;
+        color: white;
+        width: 420px;
+
+        h2 {
+            font-size: 50px;
+            color: #7C7C7C;
+            font-family: poppinsbold;
+        }
+
+        h3 {
+            font-size: 40px;
+            border-bottom: 1px solid #62D9B7;
+
+            span {
+                font-family: poppinsbold;
+            }
+        }
+    }
+}
+
+
+/* Quien soy -html1 */
+.quien-soy {
+    h3 {
+        text-align: center;
+        font-size: 40px;
+        margin: 5%;
+        
+        &.quien-soy-subrayado {
+            border-bottom: 2px solid #62D9B7;
+            width: 15%;
+            margin-left: 43%;
+        }
+    }
+
+    .quien-soy-contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 70%;
+        height: auto;
+        text-align: left;
+        margin-left: 13%;
+        margin-bottom: 5%;
+
+        .quien-soy-uno {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .quien-soy-dos {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .quien-soy-tres {
+            grid-column: 2;
+            grid-row: 1;
+            margin-left: 15%;
+            margin-right: -20%;
+        }
+
+        .quien-soy-cuatro {
+            grid-column: 2;
+            grid-row: 2;
+            margin-left: 15%;
+            margin-right: -20%;
+        }
+    }
+
+    .quien-soy-cv {
+        width: 15%;
+        height: auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 43%;
+        background-color: #62D9B7;
+        padding: 0.5%;
+        margin-bottom: 5%;
+        
+        a{
+            text-decoration: none;
+            color: #151515;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+
+}
+
 
 /* Footer */
 footer {

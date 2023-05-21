@@ -207,6 +207,7 @@ header {
   width: 100%;
   height: auto;
   margin-top: -2%;
+  margin-bottom: 3%;
   font-family: poppinslight; }
   .diseño-creatividad h2 {
     text-align: center;
@@ -220,11 +221,22 @@ header {
       color: #62D9B7;
       font-family: poppinsregular; }
 
-@media (max-width: 700px) {
-  .quien-soy {
-    font-size: 15px; }
-  .presentacion {
-    font-size: 15px; } }
+/* Formulario Index */
+.form {
+  width: 50%;
+  height: auto;
+  background-color: #7C7C7C;
+  margin-left: 25%;
+  margin-bottom: 3%;
+  padding: 2%;
+  color: #F2F2F2;
+  text-align: center;
+  border-radius: 20px; }
+  .form div {
+    margin-bottom: 2%; }
+    .form div p {
+      font-size: 25px;
+      font-family: poppinslight; }
 
 /* Formación */
 .formacion {
@@ -238,6 +250,82 @@ header {
   height: 100px;
   padding: 10px 25px 10px 25px;
   background-color: #7C7C7C; }
+
+/* Sobre mí - html1 */
+.sobre-mi-html {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  background-color: #151515; }
+  .sobre-mi-html .sobre-mi-img img {
+    width: 30%;
+    height: auto;
+    margin-left: 40%; }
+  .sobre-mi-html .presentacion {
+    padding: 20px;
+    color: white;
+    width: 420px; }
+    .sobre-mi-html .presentacion h2 {
+      font-size: 50px;
+      color: #7C7C7C;
+      font-family: poppinsbold; }
+    .sobre-mi-html .presentacion h3 {
+      font-size: 40px;
+      border-bottom: 1px solid #62D9B7; }
+      .sobre-mi-html .presentacion h3 span {
+        font-family: poppinsbold; }
+
+/* Quien soy -html1 */
+.quien-soy h3 {
+  text-align: center;
+  font-size: 40px;
+  margin: 5%; }
+  .quien-soy h3.quien-soy-subrayado {
+    border-bottom: 2px solid #62D9B7;
+    width: 15%;
+    margin-left: 43%; }
+
+.quien-soy .quien-soy-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 70%;
+  height: auto;
+  text-align: left;
+  margin-left: 13%;
+  margin-bottom: 5%; }
+  .quien-soy .quien-soy-contenedor .quien-soy-uno {
+    grid-column: 1;
+    grid-row: 1; }
+  .quien-soy .quien-soy-contenedor .quien-soy-dos {
+    grid-column: 1;
+    grid-row: 2; }
+  .quien-soy .quien-soy-contenedor .quien-soy-tres {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 15%;
+    margin-right: -20%; }
+  .quien-soy .quien-soy-contenedor .quien-soy-cuatro {
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 15%;
+    margin-right: -20%; }
+
+.quien-soy .quien-soy-cv {
+  width: 15%;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 43%;
+  background-color: #62D9B7;
+  padding: 0.5%;
+  margin-bottom: 5%; }
+  .quien-soy .quien-soy-cv a {
+    text-decoration: none;
+    color: #151515; }
+  .quien-soy .quien-soy-cv a:hover {
+    text-decoration: underline; }
 
 /* Footer */
 footer {
