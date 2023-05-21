@@ -20,6 +20,10 @@
   font-family: poppinsthing;
   src: url(../assets/font/Poppins-Thin.ttf); }
 
+@font-face {
+  font-family: poppinsitalic;
+  src: url(../assets/font/Poppins-ThinItalic.ttf); }
+
 /* Todo el documento */
 body {
   font-family: poppinsregular, sans-serif;
@@ -326,6 +330,111 @@ header {
     color: #151515; }
   .quien-soy .quien-soy-cv a:hover {
     text-decoration: underline; }
+
+/* Formación - HTML 2 */
+.formacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  background: url(../assets/img/fondo-verde.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 30%; }
+  .formacion .formacion-contenido {
+    grid-column: 1;
+    width: 78%;
+    height: auto;
+    margin-left: -40%; }
+    .formacion .formacion-contenido h2 {
+      font-size: 35px;
+      font-family: poppinsthing; }
+      .formacion .formacion-contenido h2 span.color {
+        color: #62D9B7;
+        font-family: poppinsbold; }
+      .formacion .formacion-contenido h2 span.italic {
+        font-family: poppinsitalic; }
+  .formacion .imagen-html {
+    grid-column: 2;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    margin-left: -30%; }
+
+.lenguajes-softwares div h3 {
+  text-align: center;
+  font-size: 40px;
+  margin: 5% auto; }
+  .lenguajes-softwares div h3.lenguajes-softwares-subrayado {
+    border-bottom: 2px solid #62D9B7;
+    width: 27%;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%; }
+
+.lenguajes-softwares div h4 {
+  width: 40%;
+  height: auto;
+  text-align: center;
+  font-size: 35px;
+  font-family: poppinslight;
+  margin: auto;
+  margin-bottom: 5%; }
+
+.lenguajes-softwares .imagenes-softwares {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: auto;
+  margin-bottom: 5%; }
+  .lenguajes-softwares .imagenes-softwares img {
+    width: 6%;
+    height: auto; }
+
+.formacion-complementaria {
+  margin-bottom: 5%; }
+  .formacion-complementaria h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    margin: 5% auto;
+    font-family: poppinslight; }
+    .formacion-complementaria h3.formacion-complementaria-subrayado {
+      border-bottom: 2px solid #62D9B7;
+      width: 35%; }
+  .formacion-complementaria .formacion-cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    font-size: 20px;
+    margin-left: 17%; }
+    .formacion-complementaria .formacion-cursos h4 {
+      text-align: left; }
+      .formacion-complementaria .formacion-cursos h4.formacion-complementaria-subrayado {
+        border-bottom: 1.5px solid #62D9B7;
+        width: 10%; }
+    .formacion-complementaria .formacion-cursos .cursos-com {
+      grid-column: 1; }
+      .formacion-complementaria .formacion-cursos .cursos-com h5 {
+        margin-bottom: 5px; }
+        .formacion-complementaria .formacion-cursos .cursos-com h5 span.italic {
+          font-family: poppinsitalic; }
+      .formacion-complementaria .formacion-cursos .cursos-com a {
+        text-decoration: none;
+        color: #62D9B7;
+        font-size: 15px; }
+      .formacion-complementaria .formacion-cursos .cursos-com a:hover {
+        text-decoration: underline; }
+    .formacion-complementaria .formacion-cursos .cursos-des {
+      grid-column: 2; }
+      .formacion-complementaria .formacion-cursos .cursos-des h5 {
+        margin-bottom: 5px; }
+        .formacion-complementaria .formacion-cursos .cursos-des h5 span.italic {
+          font-family: poppinsitalic; }
 
 /* Footer */
 footer {

@@ -24,6 +24,11 @@
     src: url(../assets/font/Poppins-Thin.ttf);
 }
 
+@font-face {
+    font-family: poppinsitalic;
+    src: url(../assets/font/Poppins-ThinItalic.ttf);
+}
+
 /* Todo el documento */
 body {
     font-family: poppinsregular, sans-serif;
@@ -380,7 +385,7 @@ header {
         text-align: center;
         font-size: 40px;
         margin: 5%;
-        
+
         &.quien-soy-subrayado {
             border-bottom: 2px solid #62D9B7;
             width: 15%;
@@ -388,7 +393,7 @@ header {
         }
     }
 
-    .quien-soy-contenedor{
+    .quien-soy-contenedor {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -432,16 +437,173 @@ header {
         background-color: #62D9B7;
         padding: 0.5%;
         margin-bottom: 5%;
-        
-        a{
+
+        a {
             text-decoration: none;
             color: #151515;
         }
 
-        a:hover{
+        a:hover {
             text-decoration: underline;
         }
     }
+
+}
+
+/* Formación - HTML 2 */
+.formacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    background: url(../assets/img/fondo-verde.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 30%;
+
+    .formacion-contenido {
+        grid-column: 1;
+        width: 78%;
+        height: auto;
+        margin-left: -40%;
+
+        h2 {
+            font-size: 35px;
+            font-family: poppinsthing;
+
+            span.color {
+                color: #62D9B7;
+                font-family: poppinsbold;
+            }
+
+            span.italic {
+                font-family: poppinsitalic;
+            }
+        }
+    }
+
+    .imagen-html {
+        grid-column: 2;
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+        margin-left: -30%;
+    }
+}
+
+.lenguajes-softwares {
+    div {
+        h3 {
+            text-align: center;
+            font-size: 40px;
+            margin: 5% auto;
+
+            &.lenguajes-softwares-subrayado {
+                border-bottom: 2px solid #62D9B7;
+                width: 27%;
+                margin: auto;
+                margin-bottom: 5%;
+                margin-top: 5%;
+            }
+        }
+
+        h4 {
+            width: 40%;
+            height: auto;
+            text-align: center;
+            font-size: 35px;
+            font-family: poppinslight;
+            margin: auto;
+            margin-bottom: 5%;
+        }
+    }
+
+    .imagenes-softwares {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: auto;
+        margin-bottom: 5%;
+
+        img {
+            width: 6%;
+            height: auto;
+        }
+    }
+}
+
+.formacion-complementaria {
+    margin-bottom: 5%;
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        margin: 5% auto;
+        font-family: poppinslight;
+
+        &.formacion-complementaria-subrayado {
+            border-bottom: 2px solid #62D9B7;
+            width: 35%;
+        }
+    }
+
+    .formacion-cursos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        font-size: 20px;
+        margin-left: 17%;
+
+        h4 {
+            text-align: left;
+
+            &.formacion-complementaria-subrayado {
+                border-bottom: 1.5px solid #62D9B7;
+                width: 10%;
+            }
+        }
+
+        .cursos-com {
+            grid-column: 1;
+
+            h5 {
+                margin-bottom: 5px;
+                
+                span.italic{
+                    font-family: poppinsitalic;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: #62D9B7;
+                font-size: 15px;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .cursos-des {
+            grid-column: 2;
+
+            h5 {
+                margin-bottom: 5px;
+
+                span.italic{
+                    font-family: poppinsitalic;
+                }
+            }
+        }
+
+    }
+
 
 }
 
