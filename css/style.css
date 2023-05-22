@@ -36,7 +36,8 @@ body {
 header {
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 1;
+  /* barra de navegación responsive */ }
   header .barra {
     background-color: #151515;
     padding: 30px;
@@ -62,6 +63,46 @@ header {
         margin-left: 20px;
         text-decoration: none;
         color: #F2F2F2; }
+  @media (max-width: 1024px) {
+    header .barra a {
+      font-size: 18px;
+      gap: 5%; } }
+  @media (max-width: 768px) {
+    header .barra {
+      padding: 20px;
+      margin-top: 5px; }
+      header .barra a {
+        margin-left: 5px;
+        font-size: 16px; } }
+  @media (max-width: 425px) {
+    header .barra {
+      padding: 15px;
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      header .barra a {
+        margin: 2% auto;
+        font-size: 10px; }
+      header .barra nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -15px; }
+        header .barra nav ul {
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          margin: 0;
+          padding: 0; }
+          header .barra nav ul li {
+            margin-bottom: 5px; }
+          header .barra nav ul a {
+            text-decoration: none;
+            color: #F2F2F2;
+            font-size: 10px; } }
 
 /* Inicio - Index */
 .inicio {
@@ -71,17 +112,18 @@ header {
   background: url("../assets/img/fondo-index.png");
   background-repeat: no-repeat;
   color: #F2F2F2;
-  font-size: 30px;
+  font-size: 2rem;
   font-family: poppinslight;
-  margin-top: -10px; }
+  margin-top: -10px;
+  /* Inicio - Index  Responsive */ }
   .inicio h2 {
     color: #7C7C7C;
     font-family: poppinsbold, sans-serif;
-    font-size: 75px;
+    font-size: 4.5rem;
     margin: -150px 0px 10px 200px; }
   .inicio h3 {
     margin-left: 200px;
-    font-size: 50px; }
+    font-size: 3rem; }
   .inicio h3 span {
     font-family: poppinsbold, sans-serif;
     font-weight: bold; }
@@ -95,7 +137,7 @@ header {
     padding: 5px 10px;
     margin-left: 200px;
     background-color: #151515;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: #F2F2F2;
     text-decoration: none;
     padding: 10px 20px;
@@ -108,6 +150,44 @@ header {
       max-width: 400px;
       height: auto;
       margin-left: 200px; }
+  @media (max-width: 1440px) {
+    .inicio h2,
+    .inicio h3,
+    .inicio h4,
+    .inicio h5 a,
+    .inicio > div:last-child img {
+      margin-left: 200px; } }
+  @media (max-width: 1024px) {
+    .inicio h2,
+    .inicio h3,
+    .inicio h4,
+    .inicio h5 a {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; }
+    .inicio > div:last-child img {
+      display: none; } }
+  @media (max-width: 768px) {
+    .inicio h2,
+    .inicio h3,
+    .inicio h4,
+    .inicio h5 a {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+    .inicio > div:last-child {
+      display: none; } }
+  @media (max-width: 425px) {
+    .inicio h2,
+    .inicio h3,
+    .inicio h4,
+    .inicio h5 a {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.5rem; }
+    .inicio > div:last-child {
+      display: none; } }
 
 /* Sobre mí - Index */
 .sobre-mi {
@@ -445,3 +525,18 @@ footer {
   height: 60px;
   background-color: #151515;
   gap: 15px; }
+  footer a img {
+    transition: transform 0.3s ease; }
+    footer a img:hover {
+      transform: scale(1.2); }
+
+/* Footer responsive */
+@media (max-width: 768px) {
+  a img {
+    width: 30px;
+    height: auto; } }
+
+@media (max-width: 425px) {
+  a img {
+    width: 20px;
+    height: auto; } }

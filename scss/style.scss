@@ -80,6 +80,70 @@ header {
             }
         }
     }
+
+    /* barra de navegación responsive */
+    @media (max-width: 1024px) {
+        .barra {
+            a {
+                font-size: 18px;
+                gap: 5%;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .barra {
+            padding: 20px;
+            margin-top: 5px;
+
+            a {
+                margin-left: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 425px) {
+        .barra {
+            padding: 15px;
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            a {
+                margin: 2% auto;
+                font-size: 10px;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: -15px;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        margin-bottom: 5px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #F2F2F2;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Inicio - Index */
@@ -90,20 +154,20 @@ header {
     background: url('../assets/img/fondo-index.png');
     background-repeat: no-repeat;
     color: #F2F2F2;
-    font-size: 30px;
+    font-size: 2rem;
     font-family: poppinslight;
     margin-top: -10px;
 
     h2 {
         color: #7C7C7C;
         font-family: poppinsbold, sans-serif;
-        font-size: 75px;
+        font-size: 4.5rem;
         margin: -150px 0px 10px 200px;
     }
 
     h3 {
         margin-left: 200px;
-        font-size: 50px;
+        font-size: 3rem;
     }
 
     h3 span {
@@ -125,7 +189,7 @@ header {
         padding: 5px 10px;
         margin-left: 200px;
         background-color: #151515;
-        font-size: 20px;
+        font-size: 1.5rem;
         color: #F2F2F2;
         text-decoration: none;
         padding: 10px 20px;
@@ -141,6 +205,68 @@ header {
             max-width: 400px;
             height: auto;
             margin-left: 200px;
+        }
+    }
+
+    /* Inicio - Index  Responsive */
+    @media (max-width: 1440px) {
+
+        h2,
+        h3,
+        h4,
+        h5 a,
+        >div:last-child img {
+            margin-left: 200px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+
+        h2,
+        h3,
+        h4,
+        h5 a {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        >div:last-child img {
+            display: none;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+
+        h2,
+        h3,
+        h4,
+        h5 a {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        >div:last-child {
+            display: none;
+        }
+    }
+
+    @media (max-width: 425px) {
+
+        h2,
+        h3,
+        h4,
+        h5 a {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5rem;
+        }
+
+        >div:last-child {
+            display: none;
         }
     }
 }
@@ -447,7 +573,6 @@ header {
             text-decoration: underline;
         }
     }
-
 }
 
 /* Formación - HTML 2 */
@@ -573,8 +698,8 @@ header {
 
             h5 {
                 margin-bottom: 5px;
-                
-                span.italic{
+
+                span.italic {
                     font-family: poppinsitalic;
                 }
             }
@@ -596,7 +721,7 @@ header {
             h5 {
                 margin-bottom: 5px;
 
-                span.italic{
+                span.italic {
                     font-family: poppinsitalic;
                 }
             }
@@ -617,4 +742,27 @@ footer {
     height: 60px;
     background-color: #151515;
     gap: 15px;
+
+    a img {
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+    a img {
+        width: 30px;
+        height: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    a img {
+        width: 20px;
+        height: auto;
+    }
 }
