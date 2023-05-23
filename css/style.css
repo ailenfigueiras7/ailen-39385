@@ -158,36 +158,34 @@ header {
     .inicio > div:last-child img {
       margin-left: 200px; } }
   @media (max-width: 1024px) {
-    .inicio h2,
-    .inicio h3,
-    .inicio h4,
+    .inicio .inicio-div {
+      margin-left: 30%;
+      margin-top: -25%; }
+    .inicio h2 {
+      margin: auto; }
+    .inicio h3 {
+      margin: auto; }
+    .inicio h4 {
+      margin: auto; }
     .inicio h5 a {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center; }
+      margin: auto; }
     .inicio > div:last-child img {
       display: none; } }
   @media (max-width: 768px) {
-    .inicio h2,
-    .inicio h3,
-    .inicio h4,
-    .inicio h5 a {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-    .inicio > div:last-child {
-      display: none; } }
+    .inicio .inicio-div {
+      margin-left: 20%; } }
   @media (max-width: 425px) {
-    .inicio h2,
-    .inicio h3,
-    .inicio h4,
+    .inicio .inicio-div {
+      font-size: 20px;
+      margin-top: -100%; }
+    .inicio h2 {
+      font-size: 20px; }
+    .inicio h3 {
+      font-size: 20px; }
+    .inicio h4 {
+      font-size: 20px; }
     .inicio h5 a {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 1.5rem; }
-    .inicio > div:last-child {
-      display: none; } }
+      font-size: 10px; } }
 
 /* Sobre mí - Index */
 .sobre-mi {
@@ -242,6 +240,52 @@ header {
       color: #62D9B7; }
     .sobre-mi .informacion a:hover {
       text-decoration: underline; }
+  @media (max-width: 1440px) {
+    .sobre-mi .informacion h2 {
+      width: 30%; }
+    .sobre-mi .informacion h3 {
+      width: 70%; } }
+  @media (max-width: 1440px) {
+    .sobre-mi .informacion {
+      margin-top: 30%; }
+      .sobre-mi .informacion h2 {
+        width: 40%; }
+      .sobre-mi .informacion h3 {
+        width: 95%; }
+      .sobre-mi .informacion p {
+        width: 80%; } }
+
+@media (max-width: 1440px) {
+  .sobre-mi {
+    display: flex;
+    margin-top: -20%; }
+    .sobre-mi .imagen-presentacion {
+      display: none; }
+      .sobre-mi .imagen-presentacion .imagen-ailen-index {
+        display: none; }
+  .informacion {
+    flex: 1;
+    text-align: center; }
+    .informacion h2 {
+      margin: auto; }
+    .informacion h3 {
+      padding: 0% 15%; }
+    .informacion p {
+      margin: auto;
+      width: 100%; } }
+
+@media (max-width: 425px) {
+  .sobre-mi {
+    margin-top: -60%; }
+    .sobre-mi .informacion h2 {
+      font-size: 20px;
+      margin-top: -5%; }
+    .sobre-mi .informacion h3 {
+      font-size: 15px;
+      padding: 0 10%; }
+    .sobre-mi .informacion p {
+      font-size: 12px;
+      margin-top: 0; } }
 
 /* A que me dedico - Index */
 .me-dedico h2 {
@@ -283,6 +327,15 @@ header {
   margin-left: 40%;
   background-color: #62D9B7; }
 
+@media (max-width: 768px) {
+  .me-dedico div {
+    display: block; }
+    .me-dedico div div {
+      margin-top: 20px; }
+  .me-dedico h2.subrayado {
+    width: 100%;
+    margin-left: 0; } }
+
 /* Diseño y creatividad - Index */
 .diseño-creatividad {
   display: flex;
@@ -304,6 +357,10 @@ header {
     .diseño-creatividad h2 .font {
       color: #62D9B7;
       font-family: poppinsregular; }
+  @media (max-width: 425px) {
+    .diseño-creatividad h2 {
+      font-size: 25px;
+      line-height: 1; } }
 
 /* Formulario Index */
 .form {
@@ -359,16 +416,63 @@ header {
       border-bottom: 1px solid #62D9B7; }
       .sobre-mi-html .presentacion h3 span {
         font-family: poppinsbold; }
+  @media (max-width: 2560px) {
+    .sobre-mi-html .presentacion {
+      width: 45%; }
+      .sobre-mi-html .presentacion h2 {
+        font-size: 65px; }
+      .sobre-mi-html .presentacion h3 {
+        font-size: 55px; } }
+  @media (max-width: 1440px) {
+    .sobre-mi-html .presentacion {
+      width: 60%; }
+      .sobre-mi-html .presentacion h2 {
+        font-size: 50px; }
+      .sobre-mi-html .presentacion h3 {
+        font-size: 40px; } }
+  @media (max-width: 1024px) {
+    .sobre-mi-html .sobre-mi-html {
+      grid-template-columns: 1fr;
+      align-items: center;
+      width: 100%; }
+    .sobre-mi-html .sobre-mi-img {
+      display: none; }
+    .sobre-mi-html .presentacion {
+      width: 90%;
+      height: auto;
+      text-align: left;
+      margin-left: 25%;
+      margin-bottom: 5%; }
+      .sobre-mi-html .presentacion h2 {
+        font-size: 40px; }
+      .sobre-mi-html .presentacion h3 {
+        font-size: 40px; } }
+  @media (max-width: 768px) {
+    .sobre-mi-html .presentacion {
+      width: 90%; }
+      .sobre-mi-html .presentacion h2 {
+        font-size: 30px; }
+      .sobre-mi-html .presentacion h3 {
+        font-size: 30px; } }
+  @media (max-width: 425px) {
+    .sobre-mi-html .presentacion {
+      width: 100%; }
+      .sobre-mi-html .presentacion h2 {
+        font-size: 15px; }
+      .sobre-mi-html .presentacion h3 {
+        font-size: 15px; } }
 
 /* Quien soy -html1 */
 .quien-soy h3 {
   text-align: center;
   font-size: 40px;
-  margin: 5%; }
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%; }
   .quien-soy h3.quien-soy-subrayado {
     border-bottom: 2px solid #62D9B7;
-    width: 15%;
-    margin-left: 43%; }
+    width: 20%;
+    margin: center; }
 
 .quien-soy .quien-soy-contenedor {
   display: grid;
@@ -377,7 +481,7 @@ header {
   width: 70%;
   height: auto;
   text-align: left;
-  margin-left: 13%;
+  margin: auto;
   margin-bottom: 5%; }
   .quien-soy .quien-soy-contenedor .quien-soy-uno {
     grid-column: 1;
@@ -400,16 +504,68 @@ header {
   width: 15%;
   height: auto;
   text-align: center;
+  margin: auto;
   margin-top: 20px;
-  margin-left: 43%;
   background-color: #62D9B7;
   padding: 0.5%;
   margin-bottom: 5%; }
   .quien-soy .quien-soy-cv a {
     text-decoration: none;
-    color: #151515; }
+    color: #151515;
+    font-size: 25px; }
   .quien-soy .quien-soy-cv a:hover {
     text-decoration: underline; }
+
+@media (max-width: 1024px) {
+  .quien-soy h3 {
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0; }
+  .quien-soy .quien-soy-contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin: center center; }
+    .quien-soy .quien-soy-contenedor .quien-soy-uno {
+      grid-column: 1;
+      grid-row: 1;
+      margin-top: 7%; }
+    .quien-soy .quien-soy-contenedor .quien-soy-dos {
+      grid-column: 1;
+      grid-row: 2; }
+    .quien-soy .quien-soy-contenedor .quien-soy-tres {
+      grid-column: 1;
+      grid-row: 3;
+      margin: auto; }
+    .quien-soy .quien-soy-contenedor .quien-soy-cuatro {
+      grid-column: 1;
+      grid-row: 4;
+      margin: auto; }
+  .quien-soy .quien-soy-cv {
+    width: 20%; }
+    .quien-soy .quien-soy-cv a {
+      font-size: 20px; } }
+
+@media (max-width: 768px) {
+  .quien-soy h3 {
+    font-size: 20px; }
+  .quien-soy .quien-soy-cv a {
+    font-size: 15px; } }
+
+@media (max-width: 425px) {
+  .quien-soy .quien-soy {
+    width: 100%;
+    height: auto; }
+  .quien-soy h3 {
+    font-size: 15px; }
+    .quien-soy h3.quien-soy-subrayado {
+      width: 30%; }
+  .quien-soy .quien-soy-contenedor {
+    font-size: 10px; }
+  .quien-soy .quien-soy-cv {
+    width: 30%; }
+    .quien-soy .quien-soy-cv a {
+      font-size: 10px; } }
 
 /* Formación - HTML 2 */
 .formacion {
@@ -443,6 +599,31 @@ header {
     height: auto;
     max-width: 350px;
     margin-left: -30%; }
+  @media (max-width: 1024px) {
+    .formacion .formacion-contenido {
+      width: 100%;
+      margin: left;
+      margin-left: -60%; }
+      .formacion .formacion-contenido h2 {
+        font-size: 30px; } }
+  @media (max-width: 768px) {
+    .formacion .formacion-contenido {
+      width: 100%;
+      margin: left;
+      margin-left: -60%; }
+      .formacion .formacion-contenido h2 {
+        font-size: 20px; } }
+
+@media (max-width: 425px) {
+  .formacion {
+    background: none;
+    grid-template-columns: 1fr; }
+    .formacion .formacion-contenido h2 {
+      grid-column: 1;
+      width: 100%;
+      margin-left: 30%; }
+    .formacion .imagen-html {
+      display: none; } }
 
 .lenguajes-softwares div h3 {
   text-align: center;
@@ -473,6 +654,41 @@ header {
   .lenguajes-softwares .imagenes-softwares img {
     width: 6%;
     height: auto; }
+
+@media (max-width: 2560px) {
+  .lenguajes-softwares .imagenes-softwares img {
+    width: 4%; } }
+
+@media (max-width: 1440px) {
+  .lenguajes-softwares div h3 {
+    font-size: 30px; }
+  .lenguajes-softwares div h4 {
+    font-size: 30px; }
+  .lenguajes-softwares .imagenes-softwares img {
+    width: 6%; } }
+
+@media (max-width: 1024px) {
+  .lenguajes-softwares div h3 {
+    font-size: 20px; }
+  .lenguajes-softwares div h4 {
+    font-size: 20px; } }
+
+@media (max-width: 1024px) {
+  .lenguajes-softwares div h3 {
+    font-size: 15px; }
+  .lenguajes-softwares div h4 {
+    font-size: 15px; } }
+
+@media (max-width: 425px) {
+  .lenguajes-softwares div h3 {
+    font-size: 15px; }
+    .lenguajes-softwares div h3.lenguajes-softwares-subrayado {
+      width: 50%; }
+  .lenguajes-softwares div h4 {
+    font-size: 15px;
+    width: 80%; }
+  .lenguajes-softwares .imagenes-softwares img {
+    width: 10%; } }
 
 .formacion-complementaria {
   margin-bottom: 5%; }
@@ -515,6 +731,37 @@ header {
         margin-bottom: 5px; }
         .formacion-complementaria .formacion-cursos .cursos-des h5 span.italic {
           font-family: poppinsitalic; }
+  @media (max-width: 2560px) {
+    .formacion-complementaria .formacion-cursos {
+      font-size: 35px; }
+      .formacion-complementaria .formacion-cursos h4 {
+        font-size: 30px; }
+      .formacion-complementaria .formacion-cursos .cursos-com a {
+        font-size: 25px; } }
+  @media (max-width: 1440px) {
+    .formacion-complementaria h3 {
+      font-size: 30px; }
+    .formacion-complementaria .formacion-cursos {
+      font-size: 20px; }
+      .formacion-complementaria .formacion-cursos h4 {
+        font-size: 20px; }
+      .formacion-complementaria .formacion-cursos .cursos-com a {
+        font-size: 15px; } }
+  @media (max-width: 1024px) {
+    .formacion-complementaria h3 {
+      font-size: 20px; } }
+  @media (max-width: 425px) {
+    .formacion-complementaria h3 {
+      font-size: 15px;
+      margin-top: 15%; }
+      .formacion-complementaria h3.formacion-complementaria-subrayado {
+        width: 60%; }
+    .formacion-complementaria .formacion-cursos {
+      font-size: 10px; }
+      .formacion-complementaria .formacion-cursos h4 {
+        font-size: 15px; }
+      .formacion-complementaria .formacion-cursos .cursos-com a {
+        font-size: 10px; } }
 
 /* Footer */
 footer {
