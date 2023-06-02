@@ -12,21 +12,20 @@
 
 <body>
     <header>
-        <div class="barra">
-            <a href="index.html">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
                 <h1>Ailen Figueiras</h1>
             </a>
-            <nav>
+            <div class="navbar-links">
                 <ul>
-                    <li>
-                        <a href="./pages/sobremi.html">Sobre mí</a>
-                        <a href="./pages/formacion.html">Formación</a>
-                        <a href="./pages/portfolio.html">Portfolio</a>
-                        <a href="./pages/contactame.html">Contactame</a>
-                    </li>
+                    <li><a href="./pages/sobremi.html">Sobre mí</a></li>
+                    <li><a href="./pages/formacion.html">Formación</a></li>
+                    <li><a href="./pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="./pages/contactame.html">Contactame</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+            <img src="./assets/img/menu-hambur.png" alt="menu hamburguesa" class="menu-hambur">
+        </nav>
     </header>
 
     <main>
@@ -92,24 +91,6 @@
                 <span>la <span class="font">creatividad</span> no tiene límites.</span>
             </h2>
         </section>
-
-        <!-- <section class="form">
-            <div>
-                <p>
-                    Contactame para hacer realidad tus sueños.
-                </p>
-            </div>
-            <div>
-                <form action="formulario">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre">
-                    <label for="mail">Mail</label>
-                    <input type="text" name="mail">
-                    <label for="consulta">Consulta</label>
-                    <input type="text" name="consulta">
-                </form>
-            </div>
-        </section> -->
     </main>
 
     <footer>
@@ -123,6 +104,15 @@
             <img src="./assets/img/Linkedin.png" alt="Linkedin">
         </a>
     </footer>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hambur")
+        const navLinks = document.querySelector(".navbar-links")
+    
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </body>
 
 </html>

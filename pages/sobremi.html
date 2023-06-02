@@ -12,21 +12,20 @@
 
 <body>
     <header>
-        <div class="barra">
-            <a href="../index.html">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
                 <h1>Ailen Figueiras</h1>
             </a>
-            <nav>
+            <div class="navbar-links">
                 <ul>
-                    <li>
-                        <a href="../pages/sobremi.html">Sobre mí</a>
-                        <a href="../pages/formacion.html">Formación</a>
-                        <a href="../pages/portfolio.html">Portfolio</a>
-                        <a href="../pages/contactame.html">Contactame</a>
-                    </li>
+                    <li><a href="../pages/sobremi.html">Sobre mí</a></li>
+                    <li><a href="../pages/formacion.html">Formación</a></li>
+                    <li><a href="../pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../pages/contactame.html">Contactame</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+            <img src="../assets/img/menu-hambur.png" alt="menu hamburguesa" class="menu-hambur">
+        </nav>
     </header>
 
     <main>
@@ -91,6 +90,15 @@
             <img src="../assets/img/Linkedin.png" alt="Linkedin">
         </a>
     </footer>
+    
+    <script>
+        const menuHamburger = document.querySelector(".menu-hambur")
+        const navLinks = document.querySelector(".navbar-links")
+    
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </body>
 
 </html>
