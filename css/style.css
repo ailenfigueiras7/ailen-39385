@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  font-family: poppinsregular, sans-serif;
+  background-color: #F2F2F2;
+  font-size: 20px; }
+
 @font-face {
   font-family: poppinsregular;
   src: url(../assets/font/Poppins-Regular.ttf); }
@@ -24,11 +29,30 @@
   font-family: poppinsitalic;
   src: url(../assets/font/Poppins-ThinItalic.ttf); }
 
-/* Todo el documento */
-body {
-  font-family: poppinsregular, sans-serif;
-  background-color: #F2F2F2;
-  font-size: 20px; }
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 60px;
+  background-color: #151515;
+  gap: 15px; }
+  footer a img {
+    transition: transform 0.3s ease; }
+    footer a img:hover {
+      transform: scale(1.2); }
+
+/* Footer responsive */
+@media (max-width: 768px) {
+  a img {
+    width: 30px;
+    height: auto; } }
+
+@media (max-width: 425px) {
+  a img {
+    width: 20px;
+    height: auto; } }
 
 /* Barra de Navegación */
 header {
@@ -1046,8 +1070,7 @@ header {
   padding-top: 700px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 70vh; }
+  align-items: center; }
   .contenedor-formulario .formulario-contenido {
     position: absolute;
     bottom: 60px;
@@ -1094,28 +1117,3 @@ header {
 @media (max-width: 425px) {
   .contenedor-formulario .formulario-contenido {
     width: 80%; } }
-
-/* Footer */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 60px;
-  background-color: #151515;
-  gap: 15px; }
-  footer a img {
-    transition: transform 0.3s ease; }
-    footer a img:hover {
-      transform: scale(1.2); }
-
-/* Footer responsive */
-@media (max-width: 768px) {
-  a img {
-    width: 30px;
-    height: auto; } }
-
-@media (max-width: 425px) {
-  a img {
-    width: 20px;
-    height: auto; } }

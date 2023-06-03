@@ -1,0 +1,33 @@
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 60px;
+    background-color: #151515;
+    gap: 15px;
+
+    a img {
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+    a img {
+        width: 30px;
+        height: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    a img {
+        width: 20px;
+        height: auto;
+    }
+}
