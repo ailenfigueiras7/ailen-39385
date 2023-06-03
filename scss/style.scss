@@ -1686,13 +1686,17 @@ header {
 
 /* Contactame */
 .contenedor-formulario {
-    padding-top: 120px;
+    position: relative;
+    padding-top: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh;
 
     .formulario-contenido {
+        position: absolute;
+        bottom: 60px;
+        /* Ajusta la distancia desde abajo según tus necesidades */
         background-color: #7C7C7C;
         border-radius: 50px;
         padding: 30px;
@@ -1739,20 +1743,18 @@ header {
     }
 }
 
-@media (max-width: 1024px){
-    .contenedor-formulario{
-        padding-top: 140px;
-        .formulario-contenido{
+@media (max-width: 1024px) {
+    .contenedor-formulario {
+        .formulario-contenido {
             width: 40%;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
     }
 }
 
-@media (max-width: 425px){
-    .contenedor-formulario{
-        padding-top: 140px;
-        .formulario-contenido{
+@media (max-width: 425px) {
+    .contenedor-formulario {
+        .formulario-contenido {
             width: 80%;
         }
     }
