@@ -1,0 +1,203 @@
+@media (max-width: 1440px) {
+    .sobre-mi .informacion {
+        flex: 1;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    .sobre-mi .informacion h2 {
+        margin: auto;
+        width: 20%;
+    }
+
+    .sobre-mi .informacion h3 {
+        padding: 0% 15%;
+        width: 95%;
+    }
+
+    .sobre-mi .informacion p {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .sobre-mi {
+        display: flex;
+        margin-top: -20%;
+    }
+
+    .sobre-mi .imagen-presentacion {
+        display: none;
+    }
+
+    .sobre-mi .imagen-presentacion .imagen-ailen-index {
+        display: none;
+    }
+}
+
+@media (max-width: 1440px) {
+    .me-dedico h2 {
+        margin-top: 5%;
+    }
+
+    .me-dedico h2.subrayado {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .me-dedico div {
+        margin-top: 3%;
+    }
+
+    .me-dedico::after {
+        width: 30%;
+        margin-left: 35%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .contenedor-main-dos {
+        padding-top: 80px;
+    }
+
+    .contenedor-main-dos .sobre-mi-html .presentacion {
+        width: 60%;
+    }
+
+    .contenedor-main-dos .sobre-mi-html .presentacion h2 {
+        font-size: 50px;
+    }
+
+    .contenedor-main-dos .sobre-mi-html .presentacion h3 {
+        font-size: 40px;
+    }
+
+    .contenedor-main-dos .quien-soy h3 {
+        font-size: 30px;
+        width: 15%;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .contenedor-main-dos .quien-soy .quien-soy-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        margin: center center;
+    }
+
+    .contenedor-main-dos .quien-soy .quien-soy-contenedor .quien-soy-uno {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 7%;
+    }
+
+    .contenedor-main-dos .quien-soy .quien-soy-contenedor .quien-soy-dos {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .contenedor-main-dos .quien-soy .quien-soy-contenedor .quien-soy-tres {
+        grid-column: 1;
+        grid-row: 3;
+        margin: auto;
+    }
+
+    .contenedor-main-dos .quien-soy .quien-soy-contenedor .quien-soy-cuatro {
+        grid-column: 1;
+        grid-row: 4;
+        margin: auto;
+    }
+
+    .contenedor-main-dos .quien-soy .quien-soy-cv {
+        width: 20%;
+    }
+
+    .contenedor-main-dos .quien-soy .quien-soy-cv a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .contenedor-main .lenguajes-softwares div h3 {
+        font-size: 20px;
+        width: 18%;
+    }
+
+    .contenedor-main .lenguajes-softwares div h4 {
+        font-size: 20px;
+        width: 30%;
+    }
+
+    .contenedor-main .formacion-complementaria h3 {
+        font-size: 20px;
+        width: 22%;
+    }
+
+    .contenedor-main .formacion-complementaria .formacion-cursos h4 {
+        font-size: 18px;
+        width: 12%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .contenedor-main-tres .mis-trabajos {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contenedor-main-tres .mis-trabajos {
+        font-size: 25px;
+    }
+
+    .contenedor-main-tres .mis-trabajos.mis-trabajos {
+        width: 20%;
+    }
+
+    .contenedor-main-tres .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .contenedor-main-tres .container .uno {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .contenedor-main-tres .container .dos {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .contenedor-main-tres .container .tres {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .contenedor-main-tres .container .cuatro {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .contenedor-main-tres .container .cinco {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .contenedor-main-tres .container .cinco video {
+        width: 250px;
+    }
+
+    .contenedor-main-tres .container .seis {
+        grid-column: 2;
+        grid-row: 3;
+        justify-content: flex-start;
+    }
+
+    .contenedor-main-tres .container .seis video {
+        width: 250px;
+    }
+}
+
