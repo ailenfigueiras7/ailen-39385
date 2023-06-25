@@ -1,129 +1,220 @@
+/* Index */
 @media (max-width: 1024px) {
-    .inicio .inicio-div {
-        margin-left: 30%;
-        margin-top: -10%;
-    }
+    .inicio {
+        .inicio-div {
+            margin-left: 30%;
+            margin-top: -10%;
 
-    .inicio .inicio-div h2 {
-        margin: auto;
-    }
+            h2 {
+                margin: auto;
+            }
 
-    .inicio .inicio-div h3 {
-        margin: auto;
-    }
+            h3 {
+                margin: auto;
+            }
 
-    .inicio .inicio-div h4 {
-        margin-left: 0px;
-        animation: maquina 3s steps(20) infinite alternate;
-    }
+            h4 {
+                margin-left: 0px;
+                animation: maquina 3s steps(20) infinite alternate;
+            }
 
-    @keyframes maquina {
-        from {
-            width: 0;
+            @keyframes maquina {
+                from {
+                    width: 0;
+                }
+
+                to {
+                    width: 100%;
+
+                }
+            }
+
+            h5 a {
+                margin: auto;
+            }
         }
 
-        to {
+        >div:last-child img {
+            display: none;
+        }
+    }
+}
+
+/* Index - A qué me dedico */
+@media (max-width: 1024px) {
+    .me-dedico {
+        h2 {
+            &.subrayado {
+                width: 40%;
+                margin-left: 30%;
+            }
+        }
+
+        &::after {
+            width: 40%;
+            margin-left: 30%;
+        }
+    }
+}
+
+/* Sobre mí */
+@media (max-width: 1024px) {
+    .contenedor-main-dos {
+        .sobre-mi-html {
+            grid-template-columns: 1fr;
+            align-items: center;
             width: 100%;
+
+            .sobre-mi-img {
+                display: none;
+            }
+
+            .presentacion {
+                width: 45%;
+                height: auto;
+                text-align: left;
+                margin-left: 25%;
+                margin-bottom: 5%;
+            }
+        }
+
+        .quien-soy {
+            h3 {
+                width: 20%;
+            }
         }
     }
-
-    .inicio .inicio-div h5 a {
-        margin: auto;
-    }
-
-    .inicio>div:last-child img {
-        display: none;
-    }
 }
 
-@media (max-width: 1024px) {
-    .me-dedico h2.subrayado {
-        width: 40%;
-        margin-left: 30%;
-    }
-
-    .me-dedico::after {
-        width: 40%;
-        margin-left: 30%;
-    }
-}
-
-@media (max-width: 1024px) {
-    .contenedor-main-dos .sobre-mi-html {
-        grid-template-columns: 1fr;
-        align-items: center;
-        width: 100%;
-    }
-
-    .contenedor-main-dos .sobre-mi-html .sobre-mi-img {
-        display: none;
-    }
-
-    .contenedor-main-dos .sobre-mi-html .presentacion {
-        width: 45%;
-        height: auto;
-        text-align: left;
-        margin-left: 25%;
-        margin-bottom: 5%;
-    }
-
-    .contenedor-main-dos .quien-soy h3 {
-        width: 20%;
-    }
-}
-
+/* Formación */
 @media (max-width: 1024px) {
     .contenedor-main {
         padding-top: 45px;
-    }
 
-    .contenedor-main .formacion .formacion-contenido {
-        width: 100%;
-        margin: left;
-        margin-left: -60%;
-    }
+        .formacion {
+            .formacion-contenido {
+                width: 100%;
+                margin: left;
+                margin-left: -60%;
 
-    .contenedor-main .formacion .formacion-contenido h2 {
-        font-size: 30px;
-    }
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
 
-    .contenedor-main .lenguajes-softwares div h3 {
-        font-size: 15px;
-        width: 18%;
-    }
+        .lenguajes-softwares {
+            div {
+                h3 {
+                    font-size: 15px;
+                    width: 18%;
+                }
 
-    .contenedor-main .lenguajes-softwares div h4 {
-        font-size: 15px;
-        width: 30%;
-    }
+                h4 {
+                    font-size: 15px;
+                    width: 30%;
+                }
+            }
 
-    .contenedor-main .lenguajes-softwares .imagenes-softwares img {
-        width: 5%;
-        height: auto;
-    }
+            .imagenes-softwares img {
+                width: 5%;
+                height: auto;
+            }
+        }
 
-    .contenedor-main .formacion-complementaria h3 {
-        font-size: 15px;
-        width: 22%;
-    }
+        .formacion-complementaria {
+            h3 {
+                font-size: 15px;
+                width: 22%;
+            }
 
-    .contenedor-main .formacion-complementaria .formacion-cursos h4 {
-        font-size: 15px;
-        width: 12%;
-    }
+            .formacion-cursos {
+                h4 {
+                    font-size: 15px;
+                    width: 12%;
+                }
 
-    .contenedor-main .formacion-complementaria .formacion-cursos .cursos-com h5 {
-        font-size: 13px;
-    }
+                .cursos-com {
+                    h5 {
+                        font-size: 13px;
+                    }
+                }
 
-    .contenedor-main .formacion-complementaria .formacion-cursos .cursos-des h5 {
-        font-size: 13px;
+                .cursos-des {
+                    h5 {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
     }
 }
 
+/* Portfolio */
 @media (max-width: 1024px) {
-    .contenedor-formulario .formulario-contenido {
-        width: 40%;
-        margin-bottom: 50px;
+    .contenedor-main-tres {
+        .mis-trabajos {
+            font-size: 25px;
+
+            &.mis-trabajos {
+                width: 20%;
+            }
+        }
+
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px;
+
+            .uno {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .dos {
+                grid-column: 2;
+                grid-row: 1;
+            }
+
+            .tres {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .cuatro {
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            .cinco {
+                grid-column: 1;
+                grid-row: 3;
+
+                video {
+                    width: 250px;
+                }
+            }
+
+            .seis {
+                grid-column: 2;
+                grid-row: 3;
+                justify-content: flex-start;
+
+                video {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Contactame */
+@media (max-width: 1024px) {
+    .contenedor-formulario {
+        .formulario-contenido {
+            width: 40%;
+            margin-bottom: 50px;
+        }
     }
 }

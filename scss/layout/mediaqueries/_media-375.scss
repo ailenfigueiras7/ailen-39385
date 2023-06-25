@@ -1,43 +1,61 @@
+/* Index */
 @media (max-width: 375px) {
-    .inicio .inicio-div {
-        margin-left: 10%;
+    .inicio {
+        .inicio-div {
+            margin-left: 10%;
+        }
     }
 }
 
+/* Index - Sobre mí */
 @media (max-width: 375px) {
-    .sobre-mi .informacion h2 {
-        font-size: 15px;
-    }
+    .sobre-mi {
+        .informacion {
+            h2 {
+                font-size: 15px;
+            }
 
-    .sobre-mi .informacion h3 {
-        font-size: 11px;
-    }
+            h3 {
+                font-size: 11px;
+            }
 
-    .sobre-mi .informacion p {
-        font-size: 10px;
-    }
+            p {
+                font-size: 10px;
+            }
 
-    .sobre-mi .informacion a {
-        font-size: 10px;
+            a {
+                font-size: 10px;
+            }
+        }
     }
 }
 
+/* Index - A qué me dedico */
 @media (max-width: 375px) {
-    .me-dedico h2 {
-        font-size: 15px;
-    }
+    .me-dedico {
+        h2 {
+            font-size: 15px;
+        }
 
-    .me-dedico div div h3 {
-        font-size: 11px;
-    }
+        div {
+            div {
+                h3 {
+                    font-size: 11px;
+                }
 
-    .me-dedico div div p {
-        font-size: 10px;
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
     }
 }
 
+/* Index - Diseño y creatividad */
 @media (max-width: 375px) {
-    .diseño-creatividad h2 {
-        font-size: 15px;
+    .diseño-creatividad {
+        h2 {
+            font-size: 15px;
+        }
     }
 }

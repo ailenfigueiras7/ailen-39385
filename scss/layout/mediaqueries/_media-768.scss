@@ -1,110 +1,139 @@
+/* Index */
 @media (max-width: 768px) {
-    .inicio .inicio-div {
-        margin-left: 20%;
+    .inicio {
+        .inicio-div {
+            margin-left: 20%;
+        }
     }
 }
 
+/* Index - Sobre mí */
 @media (max-width: 768px) {
-    .sobre-mi .informacion {
-        margin-top: 10%;
-    }
+    .sobre-mi {
+        .informacion {
+            margin-top: 10%;
 
-    .sobre-mi .informacion h2 {
-        width: 25%;
-        font-size: 30px;
+            h2 {
+                width: 25%;
+                font-size: 30px;
+            }
+        }
     }
 }
 
+/* Index - A qué me dedico */
 @media (max-width: 768px) {
-    .me-dedico h2 {
-        margin-top: 10%;
-        font-size: 30px;
-    }
+    .me-dedico {
+        h2 {
+            margin-top: 10%;
+            font-size: 30px;
 
-    .me-dedico h2.subrayado {
-        width: 50%;
-        margin-left: 25%;
-    }
+            &.subrayado {
+                width: 50%;
+                margin-left: 25%;
+            }
+        }
 
-    .me-dedico div {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-        gap: 20px;
-    }
+        div {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, auto);
+            gap: 20px;
 
-    .me-dedico div div img {
-        width: 20%;
-    }
+            div {
+                img {
+                    width: 20%;
+                }
 
-    .me-dedico div div h3 {
-        margin-top: 0;
-    }
+                h3 {
+                    margin-top: 0;
+                }
 
-    .me-dedico div div p {
-        width: 50%;
-        margin-top: -5px;
-    }
+                p {
+                    width: 50%;
+                    margin-top: -5px;
+                }
+            }
+        }
 
-    .me-dedico::after {
-        width: 50%;
-        margin-left: 25%;
+        &::after {
+            width: 50%;
+            margin-left: 25%;
+        }
     }
 }
 
+/* Sobre mí */
 @media (max-width: 768px) {
-    .contenedor-main-dos .sobre-mi-html .presentacion {
-        width: 45%;
-    }
+    .contenedor-main-dos {
+        .sobre-mi-html {
+            .presentacion {
+                width: 45%;
 
-    .contenedor-main-dos .sobre-mi-html .presentacion h2 {
-        font-size: 30px;
-    }
+                h2 {
+                    font-size: 30px;
+                }
 
-    .contenedor-main-dos .sobre-mi-html .presentacion h3 {
-        font-size: 30px;
-    }
+                h3 {
+                    font-size: 30px;
+                }
+            }
+        }
 
-    .contenedor-main-dos .quien-soy h3 {
-        font-size: 20px;
-    }
+        .quien-soy {
+            h3 {
+                font-size: 20px;
+            }
 
-    .contenedor-main-dos .quien-soy .quien-soy-cv a {
-        font-size: 15px;
+            .quien-soy-cv a {
+                font-size: 15px;
+            }
+        }
     }
 }
 
+/* Formación */
 @media (max-width: 768px) {
     .contenedor-main {
         padding-top: 30px;
-    }
 
-    .contenedor-main .formacion .formacion-contenido {
-        width: 100%;
-        margin: left;
-        margin-left: -60%;
-    }
+        .formacion {
+            .formacion-contenido {
+                width: 100%;
+                margin: left;
+                margin-left: -60%;
 
-    .contenedor-main .formacion .formacion-contenido h2 {
-        font-size: 20px;
-    }
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
 
-    .contenedor-main .lenguajes-softwares div h3 {
-        font-size: 15px;
-        width: 25%;
-    }
+        .lenguajes-softwares {
+            div {
+                h3 {
+                    font-size: 15px;
+                    width: 25%;
+                }
 
-    .contenedor-main .lenguajes-softwares div h4 {
-        font-size: 15px;
-        width: 45%;
-    }
+                h4 {
+                    font-size: 15px;
+                    width: 45%;
+                }
+            }
+        }
 
-    .contenedor-main .formacion-complementaria h3 {
-        font-size: 15px;
-        width: 32%;
-    }
+        .formacion-complementaria {
+            h3 {
+                font-size: 15px;
+                width: 32%;
+            }
 
-    .contenedor-main .formacion-complementaria .formacion-cursos h4 {
-        font-size: 15px;
-        width: 20%;
+            .formacion-cursos {
+                h4 {
+                    font-size: 15px;
+                    width: 20%;
+                }
+            }
+        }
     }
 }
